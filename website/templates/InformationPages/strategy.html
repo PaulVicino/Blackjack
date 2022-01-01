@@ -1,0 +1,110 @@
+{% extends "base.html" %} 
+{% block title %}Basic Strategy{% endblock %}
+
+{% block content %}
+
+<div style="margin:auto; width:60%;">
+    
+    <br>
+    <h1 class="page_heading">Basic Strategy</h1>
+    <br>
+    
+    <br>
+    <hr style="width:100%; color:black">
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    Before talking about counting cards, basic strategy needs to be mentioned. Basic strategy 
+    is the set of all actions players should make given any hand in Blackjack. If a player 
+    plays Blackjack according to basic strategy, then that player will still be at a 
+    disadvantage to the house, but only slightly. Following perfect basic strategy is not 
+    enough to become profitable by itself; players also need to count cards and play with 
+    proper bet spreads to make a profit in the long run. However, the current focus is on 
+    basic strategy for now. 
+    </h2>
+    <br>
+
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    The following image (Figure 48) is an example of a basic strategy 
+    chart. Many of these charts exist online, and they all contain information dependent on 
+    the rules of the game played. Many casinos will allow players to bring these charts to the 
+    Blackjack table to reference them while playing because even if players follow basic 
+    strategy, the casinos are still making money in the long run. 
+    </h2>
+    <br>
+
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    This specific chart is from wizardofodds.com depicting optimal basic strategy play corresponding to Liberal Vegas Strip rules.
+    </h2>
+    <br>
+            
+    <img src="/static/images/Figure 1.png" alt="Figure 1"> 
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    Figure 1: Basic strategy chart for “Liberal Vegas rules”. [1]
+    </h2>
+    <br>
+
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    In order to follow the chart, three types of Blackjack hands need to be introduced: hard, 
+    soft, and pairs. Most hands in Blackjack fall under the hard category. A hard hand is 
+    simply a hand which neither has an Ace or a pair. A soft hand is any hand containing an 
+    Ace (excluding a pair of Aces). These are called soft hands because the Ace can take on 
+    either the value of an 11 or a 1. Pairs are what they sound like, they are hands containing 
+    two of the same card. In Blackjack, players are allowed the unique option of “splitting” 
+    a pair. To do this, a player must match their original bet, and they will now play two 
+    hands. Each of the split cards will receive a new card, and each of the two hands are 
+    played like normal hands. You can even split again if you make another pair. However, 
+    most casinos only allow a max of 3 splits, and split Aces are usually only given 1 extra 
+    card thereby ending the player’s turn. 
+    </h2>
+    <br>
+
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    The five options players can make are: hit, stand, 
+    double down, split, or surrender. To follow basic strategy, a player determines the type 
+    of hand they have, adds up the value of that hand, (assuming it’s not a pair) and compares 
+    that value to the card the dealer is showing. Ideally, card counters have this chart 
+    memorized, but for the sake of learning, the user will need to look at the table to know 
+    which action to take at any given time. 
+    </h2>
+    <br>
+
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    To become an advantaged player, a card counter must 
+    perfect basic strategy. Basic strategy will change depending on the game, so players must 
+    also know which strategy corresponds to the game they play. The chart discussed in Figure 
+    48 is the basic strategy for a deep deck game where the dealer must stand on a soft 17. 
+    Below is the basic strategy where the dealer must hit on a soft 17.
+    </h2>
+    <br>
+
+    <img src="/static/images/Figure 2.png" alt="Figure 2"> 
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    Figure 2: Basic strategy where the dealer must hit on a soft 17. [1]
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    The difference between Figure 1 and Figure 2 is small, but it’s important. Since the edge 
+    the player can have against the house is small, every detail matters.
+    </h2>
+
+    <hr style="width:100%; color:black"> 
+
+    <br>
+
+    <h2 class="page_heading">References</h2>
+    
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    1. Michael Shackleford. “4-Deck to 8-Deck Blackjack Strategy” The Wizard of Odds, 13 Aug. 2019, https://wizardofodds.com/games/Blackjack/strategy/4-decks/. 
+    </h2>
+
+</div>
+
+{% endblock %}

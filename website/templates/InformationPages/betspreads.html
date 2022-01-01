@@ -1,0 +1,126 @@
+{% extends "base.html" %} 
+{% block title %}Bet Spreads{% endblock %}
+
+{% block content %}
+
+<div style="margin:auto; width:60%;">
+    
+    <br>
+    <h1 class="page_heading">Bet Spreads</h1>
+    <br>
+    
+    <br>
+    <hr style="width:100%; color:black">
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    The idea of a bet spread is to maximize profit while minimizing the risk of going 
+    bankrupt. Even if the player is counting cards perfectly, and they’ve done everything 
+    discussed so far without fail, they can still lose their entire bankroll if they don’t 
+    use a safe bet spread. Winning money by counting cards is a marathon; not a sprint. 
+    The profit margins for advantaged players are generally between 1-2%, so variance can 
+    play a huge role in profit loss in the short-term. In this section, the idea of the 
+    Kelly bet will be introduced.
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    As it turns out, the idea behind bet spreads should be thought more of in terms of 
+    financial investment. However, unlike financial investment, where market returns can 
+    fluctuate from unknown variables, the return advantaged players get from Blackjack is 
+    exact. Card counting in Blackjack is the perfect example of a guaranteed real-life 
+    application of Kelly criterion betting. 
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    The Kelly criterion is a form of scientific gambling where the risk of going bankrupt 
+    can be adjusted to a predetermined probability based on a player’s bankroll. The Kelly 
+    bet value k is calculated “by multiplying the percent chance to win by two, then 
+    subtracting one-hundred percent.” [1] 
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    k = P * 2 - 100%, where P = the player’s percent chance of winning in the long run. 
+    (P ≈ 50.5% at a true +1)
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    If players were to apply these ideas to Blackjack, then assuming they play using 
+    Liberal Vegas Strip rules where the player has a 0.28% disadvantage [2] to the house, 
+    then at a true count of +1, the player will have about a 0.72% advantage, then a 1.72% 
+    advantage at a true +2, then a 2.72%, and so on. This change of 1% in the advantage of 
+    the player per positive true count leads to the idea behind bet spreads based on Kelly 
+    bets.
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    For example, assuming a player has a true count of a +1, then their odds of winning 
+    are about 50.72% in the long run. This means that the k value at a true count of +1 for 
+    Liberal Vegas Strip rules is 1.44% (50.72% * 2 - 100%). The k value at a true +2 is 
+    3.44%, at a true +3 the k value is 5.44% and so forth. These are the values of a full 
+    Kelly bet. These percentages should be multiplied by the total bankroll of a player to 
+    know how much to bet to reach the maximal expected value. [1] However, betting at a 
+    full value k can be risky in the long run. A player betting at a full Kelly value will 
+    have about a 13.5% chance of going bankrupt.[3]
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    A Kelly fractional bet is when a Kelly bettor bets at a fraction of their Kelly bet. 
+    If a bettor bets at one full Kelly, then the value of k = 1. If a Kelly bettor bets at 
+    one fourth Kelly, then k = 0.25. Figure 52 gives the probability of going bankrupt given 
+    a Kelly bettor bets at a Kelly value k multiplied by their current bankroll X.
+    </h2>
+    <br>
+            
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    Note: the value of the Kelly bet k * X needs to be updated every time the bankroll 
+    changes. This probability is the instantaneous risk of ruin of a bankroll at a given 
+    time. [8]
+    </h2>
+    <br>
+
+    <img src="/static/images/Betspread1.png" alt="Figure 1" width="1000" height="200"> 
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">Figure 1: Risk of ruin equation for a given bankroll size [3]</h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">Figure 2 shows pre calculated values for the instantaneous risk of ruin for a Kelly 
+    bettor for a bankroll of any size.</h2>
+    <br>
+
+    <img src="/static/images/Betspread2.png" alt="Figure 2"> 
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">Figure 2: Pre calculated risk of ruin values. [3]</h2>
+
+    <br>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    Kelly betting is how most, if not all, professional card counting teams approach their 
+    betting behavior. Many card counting teams will keep their betting units at about 
+    0.3-0.2k in order to keep their risk of ruin well below 1%. [3] The idea behind Kelly 
+    fractional betting is to value not going bankrupt over maximal profit gain. Using a Kelly 
+    value of 1 leads to maximal expected value [1]; however, as we’ve previously shown, this 
+    would incur a 13.53% risk of losing everything. Most card counting teams who have a 
+    significantly large bankroll do not believe a risk of that size is worth maximal value, 
+    so they will typically take less profit in exchange for a significantly low risk of ruin. 
+    Kelly fractional bettors might not make maximal expected value in the long run, but 
+    they will still make a significant profit over time while being almost guaranteed to not 
+    go bankrupt. [3]
+    </h2>
+
+    <hr style="width:100%; color:black"> 
+
+    <br>
+
+    <h2 class="page_heading">References</h2>
+        
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">1. “Kelly criterion” Wikipedia, 25 July 2021, https://en.wikipedia.org/wiki/Kelly_criterion</h2>
+    <br>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">2. Michael Shackleford. “House Edge of Casino Games Compared” The Wizard of Odds, 3 Aug. 2021, https://wizardofodds.com/gambling/house-edge/.</h2>
+    <br>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">3. William Chin, Marc Ingenoso. “Risk Formulæ for Proportional Betting” DePaul University, Chicago Illinois; Conger Asset Management LLC, Chicago Illinois, 9 September, 2006 https://condor.depaul.edu/~wchin/riskpaper.pdf</h2>
+    
+</div>
+
+{% endblock %}

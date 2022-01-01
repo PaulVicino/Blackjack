@@ -1,0 +1,115 @@
+{% extends "base.html" %} 
+{% block title %}Card Counting{% endblock %}
+
+{% block content %}
+
+<div style="margin:auto; width:60%;">
+    
+    <br>
+    <h1 class="page_heading">Card Counting</h1>
+    <br>
+    
+    <br>
+    <hr style="width:100%; color:black">
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px"><b>Card shorthands:</b></h2>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">A - an Ace</h2>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">10 - any 10 valued card</h2>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">2-9 - cards of those values</h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    The act of counting cards is actually quite easy; however, the difficulty comes in the 
+    form of perfection. If a player is not a perfect card counter, then that player will lose 
+    money in the long run.
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    Many different card counting systems exist, but for the sake of simplicity, only the 
+    hi-low system will be discussed. The hi-low system is the most popular because it is also 
+    considered the easiest, and since perfection is required, card counters typically start by 
+    perfecting the easiest system first.
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    The hi-low system can be broken down into four main components: the value of each card, 
+    the running count, the number of decks remaining, and the true count.
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    Every card is given a simple value in the hi-low system. The cards 2-6 represent a +1, 
+    7-9 represent a 0, and 10-A represent a -1. The more 10 and 11 value cards there are in 
+    the deck, the larger advantage the player has. This is why every time a 10 or 11 value 
+    card is seen, the running count is subtracted by 1 because the player has slightly less 
+    advantage against the house in the future. The opposite is true for the cards 2-6 which 
+    will add 1 to the running count.
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    After knowing the value of each card, the running count can be computed. Everytime a card 
+    is played on the table, a player should add that value to the running count. For instance 
+    if the cards played are: A, J, 2, 2, 5, 5, 3, then the running count will be +3 assuming 
+    the running count starts at 0.
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    However in practice, counters typically don’t count cards individually. Most card counters 
+    wait until two cards are dealt next to each other. Counters will then ask the question, 
+    “Do these cards cancel out?” If so, then ignore that hand. So for instance if a 2 and an A 
+    are in one hand, then the running count does not need to be updated. Doing this makes the 
+    mental task of counting slightly easier since counters need to  do significantly less 
+    mathematical operations. After much practice, counters can easily identify when they need 
+    to update the running count by either +2, +1, -1, -2, or 0.
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    If the counter deals all the way to the end of a shoe, then the running count will be zero 
+    after the last card is dealt, so a great way to practice is to deal out 51 cards from a 
+    deck and then determine the value of the last card before looking at it.
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    Not only do card counters need to master perfecting updating the running count, but they 
+    also need to be able to convert the running count to the true count. To do this, card 
+    counters need to be great at looking at the discard tray and determining how many decks 
+    are left in the shoe. Typically, they need to be able to determine how many cards are left 
+    to the half deck, but some are able to determine down to the quarter deck. However in the 
+    long run, being able to identify the number of decks remaining to the half deck is more 
+    than enough, but it takes practice.
+    </h2>
+    <br>
+
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">
+    The true count is equivalent to the running count divided by the number of decks remaining. 
+    The reason this number is called the true count is because every +1 in the true count 
+    correlates to about a 1% advantage to the player. [1] This means if the player reaches a 
+    true +1, then the player will have a slight advantage over the house! Assuming the player 
+    is playing basic strategy perfectly, then they’ll be at about a 50.5% advantage 
+    (depending on the rules) with a true +1. At a true +2 the player is at a 51.5% advantage 
+    and so fourth. The same is also true for a negative true count. If the true count starts to 
+    get significantly low, then it’s best if the player either leaves the table or not bet a 
+    few rounds while waiting for the true count to increase again. This act of not playing for 
+    a few rounds to wait for a favorable count is commonly referred to as “Wonging out.”
+    </h2>
+
+    <hr style="width:100%; color:black"> 
+
+    <br>
+
+    <h2 class="page_heading">References</h2>
+    <br>
+    
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:24px">1. Colin Jones. “How To Count Cards” Blackjack Apprenticeship, 3 Aug. 2021, https://www.Blackjackapprenticeship.com/how-to-count-cards/.</h2>
+
+
+</div>
+
+{% endblock %}
