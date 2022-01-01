@@ -1,0 +1,49 @@
+/* Leaderboard functions*/
+.my-custom-scrollbar {
+    position: relative;
+    height: 75%;
+    overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+/* home page functions */
+
+.canvasContainer {
+    /*padding-top: 100px;*/
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /*display: block;*/
+}
+
+/* Info Page Functions*/
+
+.heading_redirect {
+    font-size: 32px;
+    color: black;
+    text-decoration: underline;
+}
+
+.download_link {
+    font-size: 28px;
+    color: black;
+}
+
+/* All Pages*/
+
+.page_heading {
+    font-size: 48px;
+    margin: 0 auto;
+    text-align: center;
+
+}
