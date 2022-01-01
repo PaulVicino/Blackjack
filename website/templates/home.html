@@ -1,0 +1,135 @@
+<!--uses the base.html template, everything in the block content block will appear below the navbar-->
+{% extends "base.html" %} 
+{% block title %}Home{% endblock %}
+
+
+{% block content %}
+
+<!--
+<div style="margin:auto; width:80%;">
+    <div id = "settingSlider" class=container>
+        <form method="POST">
+            <div class="form-group">
+                <label for=numDecks>Number of Decks</label>
+                <input type="range" id="numDecks" name="numDecks" min="1" max="8">
+            </div>
+
+            <div class="form-group">
+                <label for=deckPen>Deck Penetration</label>
+                <select id="deckPen" name="deckPen">
+                    <option value="25">25%</option>
+                    <option value="50%">50%</option>
+                    <option value="75%">75%</option>
+                    <option value="100%">100%</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for=numPlayers>Number of Players</label>
+                <select id="numPlayers" name="numPlayers">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for=modeSelect>Mode Selection</label>
+                <select id="modeSelect" name="modeSelect">
+                    <option value="manual">Manual</option>
+                    <option value="automatic">Automatic</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for=countMethod>Counting Method</label>
+                <select id="countMethod" name="countMethod">
+                    <option value="hilo">Hi-Lo</option>
+                </select>
+            </div>
+
+            <br />
+
+            
+            <button type="button" class="btn btn-primary" onClick = "settingSlider();">Submit</button>
+        </form>
+    </div>
+
+    <div id = "gameScreen" class=container>
+        <canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;">
+        </canvas>
+    </div>
+
+    <div id = "performanceMetrics" class=container>
+        <h3>Performance Metrics</h3>
+        <h3>Feedback Window</h3>
+    </div>
+
+</div>
+-->
+
+<div class="canvasContainer">
+    <script type="text/javascript" src="static/GameScene.js"></script>
+    <script type="text/javascript" src="static/StartScene.js"></script>
+    <script type="text/javascript" src="static/game.js"></script>
+</div>
+
+<!--https://youtu.be/7cpZ5Y7THmo?t=148-->
+
+{% endblock %}
+
+{% block script %}
+
+<script>
+
+</script>
+
+<!---
+<script>
+
+    function settingSlider() {
+        var numDecks = document.getElementById("numDecks");
+        var deckPen = document.getElementById("deckPen");
+        var numPlayers = document.getElementById("numPlayers");
+        var modeSelect = document.getElementById("modeSelect");
+        var countMethod = document.getElementById("countMethod");
+
+        var settings = {
+            numDecks: numDecks.value,
+            deckPen: deckPen.value,
+            numPlayers: numPlayers.value,
+            modeSelect: modeSelect.value,
+            countMethod: countMethod.value
+        };
+
+        fetch(`${window.origin}/setting-slider`, {
+            method: "POST",
+            credentials: "include",
+            body: JSON.stringify(settings),
+            cache: "no-cache",
+            headers: new Headers({
+                "content-type": "application/json"
+            })
+        })
+        .then(function (response) {
+
+            if (response.status !== 200) {
+                console.log(`Wrong Response Status: ${response.status}`);
+                return;
+            }
+
+            response.json().then(function (data) {
+                console.log(data);
+            })
+
+        })
+    }
+
+</script>
+-->
+
+{% endblock %}

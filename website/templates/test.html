@@ -1,0 +1,27 @@
+<!--This doc is only for practicing stuff, no actual code is here-->
+{% extends "base.html" %} 
+{% block title %}Test{% endblock %}
+
+{% block content %}
+<h1>This is the Home page</h1>
+
+<!--
+    to call a variable from the render template in auth.py
+    render_template("login.html", test="testing")
+    {{ test }}
+-->
+
+<!--
+    render_template("login.html", test=True)
+
+    {% if test == True %}
+    Yes it is True!
+    {% elif test == False %}
+    No it is not True!
+    {% else %}
+    Not a boolean!
+    {% endif %}
+
+-->
+
+{% endblock %}

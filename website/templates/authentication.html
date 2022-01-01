@@ -1,0 +1,40 @@
+<!--uses the base.html template, everything in the block content block will appear below the navbar-->
+{% extends "base.html" %} 
+{% block title %}Authenticate{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <!--login form-->
+    <form method="POST">
+        <br>
+        <h1 class="page_heading">Email Authentication</h3>
+
+        <div class="form-group">
+            <label for="token">Please enter token:</label>
+            <input type="text" class="form-control" id="token" name="token" placeholder="Email Token"/>
+        </div>
+
+        <br/>
+
+        <button type="submit" class="btn btn-primary" onclick = "home();">Submit</button>
+    </form>
+</div>
+
+<script>
+
+    function submitToken() {
+
+        var enteredToken = document.getElementById("token")
+        console.log(enteredToken)
+
+    }
+
+    function home() {
+
+        window.location.href = "home.html"
+    }
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+<!--uses the base.html template, everything in the block content block will appear below the navbar-->
+{% extends "base.html" %} 
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <!--login form-->
+    <form method="POST">
+        <h3 align="center">Login</h3>
+
+        <div class="form-group">
+            <label for="userName">Username</label>
+            <input type="text" class="form-control" id="userName" name="userName" placeholder="Enter Username"/>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password"/>
+        </div>
+
+        <br />
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock %}

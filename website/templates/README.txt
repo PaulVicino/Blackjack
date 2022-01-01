@@ -1,0 +1,1 @@
+The templates folder contains the various HTML pages.

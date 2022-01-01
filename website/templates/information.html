@@ -1,0 +1,54 @@
+<!--uses the base.html template, everything in the block content block will appear below the navbar-->
+{% extends "base.html" %} 
+{% block title %}Information{% endblock %}
+
+{% block content %}
+<div style="margin:auto; width:80%;">
+    <br>
+    <h1 class="page_heading">Information</h1>
+
+    <!--make this a button-->
+    <div style="text-align: center;">
+      <a class="download_link" href="/static/images/desktop_link.png" download>➤Desktop App Download</a>
+    </div>
+
+    <div style="text-align: center;">
+      <br>
+      <h3 style="font-style: italic;">"You don't think it behooves me to be able to explain any of this?"</h3>
+      <h3>- Walter White</h3>
+    </div>
+    
+    <a class="heading_redirect" id="blackjackDefinitions" href="/definitions/">➤Blackjack Definitions:</a>
+    <br><br>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:30px">"Learn about the common terms that may come up while playing Blackjack or in other Information pages. These terms include actions that users perform, or terms related to optimal play."</h2>
+    <br> <hr style="width:100%; color:black"> <br>
+    
+    <a class="heading_redirect" id="basicStrategy" href="/strategy/">➤Basic Strategy:</a>
+    <br><br>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:30px">"Learn about the basic strategy of Blackjack, as well as when the odds are favorable for you."</h2>
+    <br> <hr style="width:100%; color:black"> <br>
+    
+    <a class="heading_redirect" id="cardCounting" href="/counting/">➤Card Counting:</a>
+    <br><br>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:30px">"Learn about how to count cards, the different methods of counting, and how counting can impact your profitability."</h2>
+    <br> <hr style="width:100%; color:black"> <br>
+    
+    <a class="heading_redirect" id="commonDeviations" href="/deviations/">➤Common Deviations:</a>
+    <br><br>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:30px">"Learn about some of the common deviations of Blackjack that might be played at a casino, and which table you should choose to play at."</h2>
+    <br> <hr style="width:100%; color:black"> <br>
+    
+    <a class="heading_redirect" id="betSpreads" href="/betspreads/">➤Bet Spreads:</a>
+    <br><br>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:30px">"Learn about how to optimally place your bets, and the statistics behind how bet spreads influence your profitability."</h2>
+    <br> <hr style="width:100%; color:black"> <br>
+
+    <a class="heading_redirect" id="casinoEtiquette" href="/etiquette/">➤Casino Etiquette:</a>
+    <br><br>
+    <h2 style="color: lightgray; text-shadow: 2px 2px black; font-size:30px">"Learn about what it is like to play at an in-person casino, including table ettiquette, hand signals, and common superstitions."</h2>
+  
+
+
+</div>
+
+{% endblock %}
